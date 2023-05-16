@@ -1,5 +1,5 @@
-<h1>Welcome to "Lainey" - Create your own Virtual AI Assistant!</h1>
-<p>This repository contains a python script which outlines the structure for speech recognition, spoken response, speech to text translation, etc.
+<h1>Welcome to "Lainey"! Your own Virtual AI Assistant!</h1>
+<p>This project contains python, Scripps and modules, which outline the structure for speech recognition, spoken response, speech to text translation, etc.
 It was designed to control my Roku TV through speech, due to a misplaced TV remote, and quickly realized it could be incredibly useful for many things.</p>
 
 <h2>License:</h2>
