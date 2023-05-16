@@ -6,8 +6,11 @@ It was designed to control my Roku TV through speech, due to a misplaced TV remo
 <p>To use this project, follow these steps:</p>
 
 <h2>Clone this repo to your local machine using the following command:</h2>
-<code>git clone https://github.com/your-username/your-repository.git</code>
+<p>Copy code below</p>
+<code>git clone https://github.com/Jake-Rawls/virtual-AI-assistant.git</code>
+
 <h2>Navigate to the project's directory:</h2>
+<p>Copy code below</p>
 <code>cd your-repository</code>
 [Add any specific installation instructions, dependencies, or prerequisites here.]
 
