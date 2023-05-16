@@ -1,6 +1,25 @@
-<h1>Welcome to my Virtual AI Assistant repository!</h1>
+<h1>Welcome to "Lainey" - Create your own Virtual AI Assistant!</h1>
 <p>This repository contains a python script which outlines the structure for speech recognition, spoken response, speech to text translation, etc.
 It was designed to control my Roku TV through speech, due to a misplaced TV remote, and quickly realized it could be incredibly useful for many things.</p>
+
+<h2>License:</h2>
+<p>MIT License
+  Copyright (c) <strong>Jake Rawls</strong>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
 
 <h2><b>Installation</b></h2>
 <p>To use this project, follow these steps:</p>
@@ -32,6 +51,6 @@ It was designed to control my Roku TV through speech, due to a misplaced TV remo
 <li>Commit and push your changes to your forked repository.</li>
 <li>Submit a pull request, clearly describing your changes and their purpose.</li>
 
-<h2>License:</h2>
-<p>Thank you for your interest in this project! If you have any questions or feedback, please feel free to contact me.</p>
-<p>Feel free to modify and customize this template to fit your specific project's needs. You can add or remove sections as necessary. Remember to provide clear and concise instructions to help users understand and utilize your repository effectively.</p>
+<h2>Thanks for stopping by!</h2>
+<p>If you have any questions or feedback, please feel free to contact me, or submit a PR with any additions.</p>
+<p>Also, feel free to modify and customize this template to fit your specific project's needs. You can add or remove sections as necessary. Remember to provide clear and concise instructions to help users understand and utilize your repository effectively.</p>
