@@ -1,17 +1,14 @@
-Welcome to my Virtual AI Assistant repository! This repository contains a simple python script which outlines the structure for speech recognition, spoken response, speech to text translation, etc.
-It was designed to control my Roku TV through speech, due to a misplaced TV remote.
+<h1>Welcome to my Virtual AI Assistant repository!</h1>
+<p>This repository contains a python script which outlines the structure for speech recognition, spoken response, speech to text translation, etc.
+It was designed to control my Roku TV through speech, due to a misplaced TV remote, and quickly realized it could be incredibly useful for many things.</p>
 
-## Installation
+<h2><b>Installation</b></h2>
+<p>To use this project, follow these steps:</p>
 
-To use this project, follow these steps:
-
-1. Clone this repository to your local machine using the following command:
-  * git clone https://github.com/your-username/your-repository.git
-Navigate to the project's directory:
-
-shell
-Copy code
-cd your-repository
+<h2>Clone this repo to your local machine using the following command:</h2>
+<code>git clone https://github.com/your-username/your-repository.git</code>
+<h2>Navigate to the project's directory:</h2>
+<code>cd your-repository</code>
 [Add any specific installation instructions, dependencies, or prerequisites here.]
 
 Usage
