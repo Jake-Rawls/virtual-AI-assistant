@@ -1,64 +1,59 @@
 import speech_recognition as sr
-import pyttsx3
-import roku
+from roku import Roku
 
-# Replace with your Roku's IP address
-roku_ip = "192.168.1.136"
-roku_client = roku.Roku(roku_ip)
+roku = Roku('192.168.1.218')
 
-# Set up the speech recognition engine
 r = sr.Recognizer()
 
-# Initialize the text-to-speech engine
-engine = pyttsx3.init()
+def process_command(command):
+    command = command.lower()
 
+    if 'power on' in command:
+        roku.poweron()
+    elif 'power off' in command:
+        roku.poweroff()
+    elif 'home' in command:
+        roku.home()
+    elif 'volume up' in command:
+        roku.volume_up()
+    elif 'volume down' in command:
+        roku.volume_down()
+    elif 'mute' in command:
+        roku.volume_mute()
+    elif 'unmute' in command:
+        roku.volume_mute()
+    elif 'up' in command:
+        roku.up()
+    elif 'down' in command:
+        roku.down()
+    elif 'left' in command:
+        roku.left()
+    elif 'right' in command:
+        roku.right()
+    elif 'select' in command:
+        roku.select()
+    elif 'netflix' in command:
+        app = roku['Netflix']
+        app.launch()
+    elif 'peacock' in command:
+        app = roku['593099']
+        app.launch()
+    elif 'hulu' in command:
+        app = roku['2285']
+        app.launch()
+    elif 'xbox' in command:
+        app = roku['tvinput.hdmi1']
+        app.launch()
+    else:
+        print("Command not recognized.")
 
-# Function to speak the given text
-def speak(command):
-    engine.say(command)
-    engine.runAndWait()
+while True:
+    with sr.Microphone() as source:
+        print("Listening for a command...")
+        audio = r.listen(source)
 
-
-# Define the voice commands
-commands = {
-    "turn on": roku_client.power_on,
-    "turn off": roku_client.power_off,
-    "volume up": roku_client.volume_up,
-    "volume down": roku_client.volume_down,
-    "mute": roku_client.volume_mute,
-    "open Netflix": lambda: roku_client.launch_app("Netflix"),
-    "open Hulu": lambda: roku_client.launch_app("Hulu"),
-    "play": roku_client.play,
-    "pause": roku_client.pause,
-    "rewind": roku_client.rewind,
-    "fast forward": roku_client.fast_forward,
-}
-
-
-# Continuously listen for voice commands
-def recognize_and_speak():
-    while True:
-
-        with sr.Microphone() as source:
-            print("Say something!")
-            audio = r.listen(source)
-
-            try:
-                # Recognize the speech using Google Speech Recognition
-                command = r.recognize_google(audio).lower()
-                print(f"You said: {command}")
-
-                # Execute the corresponding command
-                if command in commands:
-                    speak(command)
-
-                else:
-                    print("Sorry, I didn't understand that.")
-
-            except sr.UnknownValueError:
-                print("Sorry, I didn't understand that.")
-
-
-# Start live speech recognition and speech output
-if __name__ == '__main__':
-    recognize_and_speak()
+        try:
+            command = r.recognize_google(audio)
+            process_command(command)
+        except sr.UnknownValueError:
+            pass
